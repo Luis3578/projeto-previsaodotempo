@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT INTER  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- FIM -->
+
+    <!-- FONT SPACE GROTESK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- FIM -->
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- FIM -->
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivel.css">
+    <!-- FIM -->
+
+    <!-- SCRIPT  -->
+    <script src="js/script.js" defer></script>
+    <!-- FIM -->
+    <title>ClimaAgora</title>
+</head>
+
+<body>
+    <header>
+        <div class="container_limiter">
+            <a class="brand" href="#" aria-label="ClimaAgora - página inicial">
+                <span class="brand_icon"><i class="bi bi-cloud-sun-fill"></i></span>
+                <span>Clima<strong>Agora</strong></span>
+            </a>
+            <form class="pesquisar" role="search">
+                <i class="bi bi-search"></i>
+                <input type="search" name="text" id="text" placeholder="Busque uma cidade..." required autocomplete="off" aria-label="Buscar cidade">
+                <button type="submit" aria-label="Consultar previsão"><i class="bi bi-arrow-right"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <main class="container_conteudo">
+        <div class="container_limiter">
+
+            <div class="geral_grid">
+                <!-- TEMPO -->
+                <section class="box_tempo">
+                    <div class="tempo_conteudo_01">
+                        <p class="localizacao">
+                            Sua previsão
+                        </p>
+                        <h2 class="gral_celsius">
+                            --°
+                        </h2>
+                        <p class="clima">
+                            Busque uma cidade
+                        </p>
+                        <div class="box_max_min">
+                            <p class="max">máxima <br><span class="max_temp">
+                                    --°
+                                </span></p>
+                            <p class="min">mínima <br><span class="min_temp">
+                                    --°
+                                </span></p>
+                        </div>
+                    </div>
+                    <div class="icon_tempo">
+                        <img class="img_icon" src="img/nublado.png" alt="Condição do tempo">
+                    </div>
+                </section>
+                <!-- FIM -->
+
+                <!-- PREVISAO HORA -->
+                <section class="box_previsao_hora">
+                    <div class="previsao_hora">
+                        <div class="icon_umidade">
+                            <img src="img/umidade.png" alt="umidade">
+                            <p class="umidade">umidade</p>
+                        </div>
+
+                        <h3 class="umidade_porcentagem">--%</h3>
+                        <div class="barra">
+                            <div class="progresso"></div>
+                        </div>
+                    </div>
+
+                    <div class="previsao_hora">
+                        <div class="icon_vento">
+                            <img src="img/vento.png" alt="vento">
+                            <p class="vento">vento</p>
+                        </div>
+
+                        <h3 class="vento_km">-- <span>km/h</span></h3>
+                        <p class="direcao">velocidade do vento</p>
+                    </div>
+
+                    <div class="previsao_hora">
+                        <div class="icon_indice">
+                            <img src="img/indice.png" alt="indice">
+                            <p class="indice">índice UV</p>
+                        </div>
+
+                        <h3 class="indice_uv">-- <span>nível</span></h3>
+                        <p class="indice_p">proteção necessária</p>
+                    </div>
+                </section>
+                <!-- FIM -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container_limiter">
+            <a class="brand" href="#" aria-label="ClimaAgora - página inicial">
+                <span class="brand_icon"><i class="bi bi-cloud-sun-fill"></i></span>
+                <span>Clima<strong>Agora</strong></span>
+            </a>
+            <p>&copy; 2026 LuisDev. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
